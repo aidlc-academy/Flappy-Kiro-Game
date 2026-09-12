@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flappy Kiro - Soul Harvest</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="game-wrap">
+  <canvas id="game" width="400" height="600"></canvas>
+
+  <div id="hud" class="hidden">
+    <div id="score">0</div>
+    <div id="soul-hud">
+      <span id="soul-icon">✧</span>
+      <span id="soul-count">0</span>
+      <span id="soul-mult">x1</span>
+      <span id="phase-icon" title="Phase charge: pass through one wall unharmed">👻</span>
+    </div>
+  </div>
+
+  <div id="overlay">
+    <div class="ghosty-title">👻</div>
+    <h1>FLAPPY KIRO</h1>
+    <p>Guide Ghosty through the graveyard gates.<br>Tap SPACE or click/tap to rise.<br>Collect souls ✧ to build a multiplier.<br>A golden soul grants one free pass through a wall.</p>
+    <p class="score-line" id="best-line">Best: 0</p>
+    <p class="hint" id="start-hint">Press SPACE or tap to start</p>
+  </div>
+
+  <button id="mute-btn" title="Toggle sound">🔊</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
